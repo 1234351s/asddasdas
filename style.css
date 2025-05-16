@@ -4,7 +4,6 @@
      height: 91px; 
      font-family: Arial, sans-serif; 
      text-align: center; 
-
      color: #333; 
      padding: 20px; 
      font-family: Montserrat Alternates;
@@ -13,10 +12,8 @@
     } 
     .guess-title {
        font-size:16px;
-       font-weight: 400px; 
-       height: 19px;
-       width: 326px;
-       padding-bottom: 56px;
+       font-weight: 400; 
+       margin-bottom: 56px;
         } 
         .input-container 
         { 
@@ -61,22 +58,19 @@
 
                             font-size: 18px; 
                                   font-weight: bold; 
-                                  margin-left: 202px;
-                                  margin-top: 2px;
-                                 
-                                  justify-content: flex-start; 
-                                  gap: 10px;
-  }
-  .guess-num {
-    display:flex;
-  }
+                    
+                        }
+.guess-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 576px;
+    margin: 0 auto;
+}
 
   @media (max-width: 1024px) {
     .guess-num {
-        width: 120px;
-        height: 32px;
-        border-width: 15px;
-        font-size: 15px;
+        width: 400px;
     }
   }
 
@@ -84,10 +78,6 @@
 
 @media (max-width: 480px) {
     .guess-num {
-        width: 80px;
-        height: 24px;
-        border-width: 10px;
-        font-size: 12px;
-        border-radius: 15px;
+    flex-wrap: wrap;
     }
   }
